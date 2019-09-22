@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <link href="Bootsrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="Bootsrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="Bootsrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="Bootsrap/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="font-awsome/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="font-awsome/css/fontawesome.css" rel="stylesheet" />
+        <link href="font-awsome/css/fontawesome-all.min.css" rel="stylesheet" />
+        <link href="font-awsome/css/fontawesome-all.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-solid.min.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-solid.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-regular.min.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-regular.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-brands.min.css" rel="stylesheet" />
+        <link href="font-awsome/css/fa-brands.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Bootsrap/js/bootstrap.js"></script>
+    <script src="Bootsrap/js/bootstrap.min.js"></script>
+    <script src="Bootsrap/js/npm.js"></script>
+        <link href="Bootsrap/css/myStyles.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="navbar navbar-default ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" runat="server" href="Home.aspx"><img src="images/red_cafe_logo_1x.png"/></a>
+                        
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a runat="server" href="Home.aspx">Home</a></li>
+                                    <li><a runat="server" href="Menu.aspx">Menu</a></li>
+                                    <li><a runat="server" href="About.aspx">About</a></li>
+                                    <li><a runat="server" href="Contact.aspx">Contact</a></li>
+                                </ul>
+      
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="loginView">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="Login.aspx"><span class="glyphicon glyphicon-user"></span> <asp:Label ID="LabelUser" runat="server"></asp:Label>
+                                        </a></li>
+                                    <li><a href="Registration.aspx"><span class="glyphicon glyphicon-log-in"></span> <asp:Label ID="LabelRegister" runat="server"></asp:Label>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            </div>
+        </div>           
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid" >
+             <div class="row">
+               <div class="col-lg-12" style="background-color:#5A5A5A;">          
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <h1><span style="color:#FB4E4E;font-family:Verdana;font-size:25px;">REDCaffe</span></h1>
+                               <p style="font-family:Verdana;color:#CDCDCD;font-size:15px;">RedCaffe is dedicated to offering <br /> food and services from trusted <br />growers and
+                                prducers at the best <br />affordable price. Discounted at your convenience. Currently exanpand <br />our reach to furthest corners of the<br /> country.</p>
+                           </div>
+                           <div class="col-lg-4 ">
+                               <h1 style="text-align:center;"><span style="color:#A0A0A0;font-size:20px;">CONTACT</span></h1>
+                               <p style="font-family:Verdana;color:#CDCDCD;font-size:15px;"><span class="fa fa-map-pin" style="color:#353535;"></span> NG1 66F, Market Center, Nottingham, UK</p>
+				                <p style="font-family:Verdana;color:#CDCDCD;font-size:15px;"><span class="fa fa-phone" style="color:#353535;"></span> Phone (United Kingdom) : +44 7474747474</p>
+				                <p style="font-family:Verdana;color:#CDCDCD;font-size:15px;"><span class="fa fa-envelope" style="color:#353535;"></span> E-mail : redcaffe@querysupport.com</p>
+                           </div>
+                           <div class="col-lg-4 text-center">
+                               <h1 style="text-align:center;"><span style="color:#A0A0A0;font-size:20px;">GENERAL LINKS</span></h1>
+                               <nav >
+                                   <ul >
+                                       <li style="list-style-type: none;"><a href="Home.aspx" style="text-decoration:none; color:#DC9898; font-family:Verdana;font-size:18px;">Home</a></li>
+                                       <li style="list-style-type: none;"><a href="Menu.aspx" style="text-decoration:none; color:#DC9898; font-family:Verdana;font-size:18px;">Menu</a></li>
+                                       <li style="list-style-type: none;"><a href="About.aspx" style="text-decoration:none; color:#DC9898; font-family:Verdana;font-size:18px;">About</a></li>
+                                       <li style="list-style-type: none;"><a href="Contact.aspx" style="text-decoration:none; color:#DC9898; font-family:Verdana;font-size:18px;">Contact</a></li>
+                                   </ul>
+                               </nav>
+                           </div>       
+                       </div>
+                   </div>
+               </div>                 
+               <div class="col-lg-12 text-center" style="background-color:#3E3E3E;font-family:Verdana;height:50px;">
+                   <p style="color:white;padding-top:15px;">@2018 Copyright</p>
+               </div>
+            </div>       
+       </div>
+    </form>
+</body>
+</html>

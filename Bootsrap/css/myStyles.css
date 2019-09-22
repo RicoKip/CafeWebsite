@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #F0F0F0;
+}
+.navbar-brand {
+    padding-top:0px;  
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-header img {
+    background-size:cover;
+    width:100px;
+    height:inherit;
+    padding-top:0px;  
+}
+.container-fluid {
+    padding-right:1px;
+    padding-left:1px;
+}
+.nav li a {
+    font-size: 18px;
+    padding-top: 12px;
+}
